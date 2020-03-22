@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d48dfb09d9ff0d88c32acf514ad54c42",
+    "revision": "4ee2126511e16a3449489ac5e1d1460b",
     "url": "/patternlab/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/patternlab/static/css/2.e4113a95.chunk.css"
   },
   {
-    "revision": "3c2f39c7a816100d81b7",
-    "url": "/patternlab/static/css/main.08df6c83.chunk.css"
+    "revision": "0b050b63527ea03617b0",
+    "url": "/patternlab/static/css/main.35dd1cb7.chunk.css"
   },
   {
     "revision": "2dda9a0493d12bcf4f64",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/patternlab/static/js/2.4bf23afd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3c2f39c7a816100d81b7",
-    "url": "/patternlab/static/js/main.9b2fe077.chunk.js"
+    "revision": "0b050b63527ea03617b0",
+    "url": "/patternlab/static/js/main.5fdaadd0.chunk.js"
   },
   {
     "revision": "55f37fc300f1c31d602a",
