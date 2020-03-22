@@ -42,6 +42,10 @@
   color: #808080;
 }
 
+.link:hover {
+  color: #444444;
+}
+
 .action {
   margin-bottom: 2rem;
 }
