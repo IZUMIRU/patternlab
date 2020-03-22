@@ -27,7 +27,7 @@ const Login: FC = () => {
             <label className={styles.label}>Password</label>
             <input
               className={styles.inputText}
-              type="text"
+              type="password"
               placeholder="Password"
             ></input>
             <span className={styles.note}>
