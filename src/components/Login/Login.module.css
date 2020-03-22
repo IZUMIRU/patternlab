@@ -1,0 +1,60 @@
+.box {
+  border: 1px solid #808080;
+  border-radius: 6px;
+  padding: 2rem;
+  max-width: 32em;
+  margin: 2rem auto;
+}
+
+.boxHeader {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  max-width: 12em;
+  margin: 0 auto;
+  display: block;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.label {
+  color: #808080;
+  font: bold 100%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+
+.inputText {
+  width: 100%;
+  border: 1px solid #a5a5a5;
+  border-radius: 6px;
+  padding: 1rem;
+  font: 100% "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+
+.note {
+  color: #808080;
+  font: 0.75rem "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+
+.link {
+  color: #808080;
+}
+
+.action {
+  margin-bottom: 2rem;
+}
+
+.button {
+  background: #444444;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font: bold 100%/1 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+
+.button:hover {
+  background: #808080;
+  color: #fff;
+}

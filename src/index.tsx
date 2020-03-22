@@ -1,12 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import * as serviceWorker from "./serviceWorker";
+import Header from "components/Header";
+import Login from "components/Login";
+// TODO: Survey Reset CSS
+// https://create-react-app.dev/docs/adding-css-reset
+import "ress";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// TODO: Routing
+ReactDOM.render(
+  <React.Fragment>
+    <Header />
+    <Login />
+  </React.Fragment>,
+  document.getElementById("root")
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
