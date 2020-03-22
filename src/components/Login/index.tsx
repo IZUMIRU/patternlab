@@ -1,9 +1,8 @@
-// https://demo.patternlab.io/?p=pages-login
-
 import React, { FC } from "react";
 import logo from "logo.svg";
 import styles from "./Login.module.css";
 
+// https://demo.patternlab.io/?p=pages-login
 const Login: FC = () => (
   <React.Fragment>
     <div className={styles.box}>
