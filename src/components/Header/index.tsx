@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./Header.module.css";
+import styles from "./style.module.css";
 
 const Header: FC = () => (
   <React.Fragment>

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import logo from "logo.svg";
-import styles from "./Login.module.css";
+import styles from "./style.module.css";
 
 // https://demo.patternlab.io/?p=pages-login
 const Login: FC = () => (
