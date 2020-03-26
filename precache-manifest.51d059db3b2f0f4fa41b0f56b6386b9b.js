@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4ee2126511e16a3449489ac5e1d1460b",
+    "revision": "31eec71148addb05fe8d5b84ebe18583",
     "url": "/patternlab/index.html"
   },
   {
-    "revision": "2dda9a0493d12bcf4f64",
+    "revision": "f16a1a16e05a3e36f435",
     "url": "/patternlab/static/css/2.e4113a95.chunk.css"
   },
   {
-    "revision": "0b050b63527ea03617b0",
-    "url": "/patternlab/static/css/main.35dd1cb7.chunk.css"
+    "revision": "1f0f813b07f0b9cb4ef7",
+    "url": "/patternlab/static/css/main.6b3a0bbc.chunk.css"
   },
   {
-    "revision": "2dda9a0493d12bcf4f64",
-    "url": "/patternlab/static/js/2.4bf23afd.chunk.js"
+    "revision": "f16a1a16e05a3e36f435",
+    "url": "/patternlab/static/js/2.04a01e53.chunk.js"
   },
   {
     "revision": "5356fa2f66e46e6c05e4cbe319ac7f1d",
-    "url": "/patternlab/static/js/2.4bf23afd.chunk.js.LICENSE.txt"
+    "url": "/patternlab/static/js/2.04a01e53.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0b050b63527ea03617b0",
-    "url": "/patternlab/static/js/main.5fdaadd0.chunk.js"
+    "revision": "1f0f813b07f0b9cb4ef7",
+    "url": "/patternlab/static/js/main.95a0fe3d.chunk.js"
   },
   {
     "revision": "55f37fc300f1c31d602a",
