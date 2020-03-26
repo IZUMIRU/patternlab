@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import logo from "logo.svg";
+import Logo from "components/atoms/Logo";
 import styles from "./style.module.css";
 
 // https://demo.patternlab.io/?p=pages-login
@@ -7,7 +7,7 @@ const Login: FC = () => (
   <React.Fragment>
     <div className={styles.box}>
       <div className={styles.boxHeader}>
-        <img className={styles.logo} src={logo} alt="logo" />
+        <Logo />
       </div>
       <form>
         <div className={styles.field}>
