@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Logo from "components/atoms/Logo";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 // https://demo.patternlab.io/?p=pages-login
 const Login: FC = () => (
