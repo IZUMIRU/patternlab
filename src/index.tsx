@@ -6,13 +6,20 @@ import Login from "components/templates/Login";
 // TODO: Survey Reset CSS
 // https://create-react-app.dev/docs/adding-css-reset
 import "ress";
+import { PersistGate } from "redux-persist/integration/react";
+import { Provider } from "react-redux";
+import store, { persistor } from "configureStore";
 
 // TODO: Routing
 ReactDOM.render(
-  <React.Fragment>
-    <Header />
-    <Login />
-  </React.Fragment>,
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <React.Fragment>
+        <Header />
+        <Login />
+      </React.Fragment>
+    </PersistGate>
+  </Provider>,
   document.getElementById("root")
 );
 
