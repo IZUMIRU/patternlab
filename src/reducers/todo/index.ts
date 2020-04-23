@@ -1,12 +1,15 @@
 import { ADD_TODO, AddTodoType } from "actions/addTodo";
 
-export interface State {
+export interface todoState {
   [text: string]: string;
 }
 
-export const initialState: State = {};
+export const initialState: todoState = {};
 
-const todo = (state = initialState, { type, payload }: AddTodoType): State => {
+const todo = (
+  state = initialState,
+  { type, payload }: AddTodoType
+): todoState => {
   switch (type) {
     case ADD_TODO: {
       const { text } = payload;
