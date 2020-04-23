@@ -1,20 +1,18 @@
-import React, { FC, useState } from "react";
-import { connect } from "react-redux";
+import React, { FC, useState, useCallback } from "react";
+import { connect, useDispatch } from "react-redux";
 import addTodo from "actions/addTodo";
-import { Dispatch } from "redux";
 import Input from "components/atoms/forms/Input";
 
-const AddTodo: FC<{ dispatch: Dispatch }> = ({ dispatch }) => {
+const AddTodo: FC = () => {
   const [value, setValue] = useState<string>("");
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
-    event.preventDefault();
-    dispatch(addTodo(value));
-  };
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    setValue(event.target.value);
-  };
+  const dispatch = useDispatch();
+  const handleSubmit = useCallback(() => dispatch(addTodo(value)), [
+    dispatch,
+    value,
+  ]);
+  const handleChange = useCallback<
+    (event: React.ChangeEvent<HTMLInputElement>) => void
+  >((event) => setValue(event.target.value), []);
 
   return (
     <form onSubmit={handleSubmit}>
