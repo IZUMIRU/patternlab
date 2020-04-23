@@ -1,10 +1,10 @@
 import { ADD_TODO, AddTodoType } from "actions/addTodo";
 
 export interface todoState {
-  [text: string]: string;
+  todo: string;
 }
 
-export const initialState: todoState = {};
+export const initialState: todoState = { todo: "" };
 
 const todo = (
   state = initialState,
@@ -12,8 +12,8 @@ const todo = (
 ): todoState => {
   switch (type) {
     case ADD_TODO: {
-      const { text } = payload;
-      return { ...state, text };
+      const { todo } = payload;
+      return { ...state, todo };
     }
     default: {
       return state;

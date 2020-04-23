@@ -2,14 +2,14 @@ export const ADD_TODO = "ADD_TODO";
 
 export type AddTodoType = {
   payload: {
-    text: string;
+    todo: string;
   };
   type: typeof ADD_TODO;
 };
 
-const addTodo = (text: string): AddTodoType => ({
+const addTodo = (todo: string): AddTodoType => ({
   payload: {
-    text,
+    todo,
   },
   type: ADD_TODO,
 });
