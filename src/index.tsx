@@ -15,18 +15,16 @@ ReactDOM.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <Header />
-      <React.Fragment>
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/todo">
-              <AddTodo />
-            </Route>
-          </Switch>
-        </BrowserRouter>
-      </React.Fragment>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/todo">
+            <AddTodo />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </PersistGate>
   </Provider>,
   document.getElementById("root")
