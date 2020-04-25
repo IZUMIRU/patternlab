@@ -6,7 +6,7 @@ import Input from "components/atoms/forms/Input";
 const AddTodo: FC = () => {
   const [value, setValue] = useState<string>("");
   const dispatch = useDispatch();
-  const handleSubmit = useCallback(() => dispatch(addTodo(value)), [
+  const handleSubmit = useCallback<() => void>(() => dispatch(addTodo(value)), [
     dispatch,
     value,
   ]);
