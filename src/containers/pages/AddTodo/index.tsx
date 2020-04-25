@@ -1,5 +1,5 @@
 import React, { FC, useState, useCallback } from "react";
-import { connect, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import addTodo from "actions/addTodo";
 import Input from "components/atoms/forms/Input";
 
@@ -27,4 +27,4 @@ const AddTodo: FC = () => {
   );
 };
 
-export default connect()(AddTodo);
+export default AddTodo;
