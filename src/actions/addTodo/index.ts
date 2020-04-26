@@ -1,4 +1,4 @@
-export const ADD_TODO = "ADD_TODO";
+export const ADD_TODO: string = "ADD_TODO";
 
 export type AddTodoType = {
   payload: {
@@ -7,7 +7,7 @@ export type AddTodoType = {
   type: typeof ADD_TODO;
 };
 
-const addTodo = (todo: string): AddTodoType => ({
+const addTodo: (todo: string) => AddTodoType = (todo) => ({
   payload: {
     todo,
   },
