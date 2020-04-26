@@ -4,15 +4,15 @@ import addTodo from "actions/addTodo";
 import Input from "components/atoms/forms/Input";
 
 const AddTodo: FC = () => {
-  const [value, setValue] = useState<string>("");
+  const [todo, setTodo] = useState<string>("");
   const dispatch = useDispatch();
-  const handleSubmit = useCallback<() => void>(() => dispatch(addTodo(value)), [
+  const handleSubmit = useCallback<() => void>(() => dispatch(addTodo(todo)), [
     dispatch,
-    value,
+    todo,
   ]);
   const handleChange = useCallback<
     (event: React.ChangeEvent<HTMLInputElement>) => void
-  >((event) => setValue(event.target.value), []);
+  >((event) => setTodo(event.target.value), []);
 
   return (
     <form onSubmit={handleSubmit}>
