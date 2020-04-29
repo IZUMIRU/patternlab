@@ -6,16 +6,12 @@ export type TodoState = {
 
 export const initialState: TodoState = { todo: "" };
 
-const todo: (
-  state: TodoState,
-  {
-    payload: { todo },
-    type,
-  }: AddTodoType
-) => TodoState = (state = initialState, { type, payload }) => {
+const todo: (state: TodoState, { todo, type }: AddTodoType) => TodoState = (
+  state = initialState,
+  { todo, type }
+) => {
   switch (type) {
     case ADD_TODO: {
-      const { todo } = payload;
       return { ...state, todo };
     }
     default: {
