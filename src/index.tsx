@@ -3,16 +3,30 @@ import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 import Header from "components/organisms/Header";
 import Login from "components/templates/Login";
-// TODO: Survey Reset CSS
-// https://create-react-app.dev/docs/adding-css-reset
 import "ress";
+import { PersistGate } from "redux-persist/integration/react";
+import { Provider } from "react-redux";
+import store, { persistor } from "configureStore";
+import AddTodo from "containers/pages/AddTodo";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 
-// TODO: Routing
+// TODO: top page
 ReactDOM.render(
-  <React.Fragment>
-    <Header />
-    <Login />
-  </React.Fragment>,
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <Header />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/todo">
+            <AddTodo />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </PersistGate>
+  </Provider>,
   document.getElementById("root")
 );
 
